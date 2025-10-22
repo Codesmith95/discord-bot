@@ -4,7 +4,7 @@ import sys
 from dotenv import load_dotenv
 from bot_app import bot
 import os
-import pyaternos
+import python_aternos
 
 #TODO Fix the posted info
 #TODO Purge channel after shutdown of server
@@ -40,10 +40,10 @@ aternos = atclient.account
 servers = aternos.list_servers()
 
 # Get the right server
-UTS = servers[1]
+UTS = servers[0]
 print("Software:", UTS.software)
 print("Version:", UTS.version)
-print("THIS IS NOT UTS!! THE ACCOUNT HAS NOT BEEN GIVEN PERMISSION YET!")
+print("THIS IS UTS!!!")
 # ===================================
 
 # on_ready: re-hook any existing poll message so buttons keep working after restarts
